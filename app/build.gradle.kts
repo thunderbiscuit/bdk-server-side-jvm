@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.5.10"
+    kotlin("jvm") version "1.5.20"
     application
 }
 
@@ -19,7 +19,10 @@ dependencies {
     implementation("com.google.guava:guava:30.0-jre")
 
     // bitcoindevkit
-    implementation("org.bitcoindevkit:bdk:0.0.1-dev")
+    implementation("org.bitcoindevkit:bdk:0.0.1-SNAPSHOT")
+
+    // test dependencies
+    testImplementation("junit:junit:4.13.2")
 }
 
 application {

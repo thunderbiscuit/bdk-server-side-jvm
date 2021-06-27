@@ -3,12 +3,14 @@
  */
 package bdkserverside.jvm
 
-import kotlin.test.Test
-import kotlin.test.assertNotNull
+import org.junit.Assert.assertNotNull
+import org.junit.Test
 
 class AppTest {
-    @Test fun testAppHasAGreeting() {
-        val classUnderTest = App()
-        assertNotNull(classUnderTest.greeting, "app should have a greeting")
+    
+    @Test
+    fun testWalletHasAddress() {
+        val address = MiniWallet.newAddress()
+        assertNotNull("app should generate an address", address)
     }
 }
